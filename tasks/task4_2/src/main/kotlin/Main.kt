@@ -10,11 +10,9 @@ fun main() {
 
     val choice = readln().lowercase()
 
-    val message = if (choice.length == 1 && choice[0] in 'a'..'d') {
-        "Order accepted"
+    if (choice.length == 1 && choice[0] in 'a'..'d') {
+        println("Order accepted")
     } else {
-        "Invalid choice!"
+        println("Invalid choice!")
     }
-
-    println(message)
 }
