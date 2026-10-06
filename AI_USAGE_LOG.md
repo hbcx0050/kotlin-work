@@ -237,3 +237,16 @@ as new entries.
   20-character and a 21-character string), and a final newline in
   `StringTools.kt`.
 - **Notes:** Classroom task, not assessed.
+
+### 2026-10-06: Task 5.4.2 (extension property)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 5.4.2.
+- **AI did:** Scaffolded the task by copying the Task 5.4.1 sources (step 1 of the
+  task) with TODO markers. Explained extension properties and getters. Ran the
+  program and confirmed the output was unchanged from 5.4.1.
+- **Student did:** Converted `isTooLong()` to an extension property and updated
+  the calls in `main()`.
+- **AI-written code:** Scaffolding. In tidy-up, removed the TODO comments and the
+  commented-out old function, and added a final newline.
+- **Notes:** Classroom task, not assessed.
