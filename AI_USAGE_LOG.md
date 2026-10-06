@@ -194,3 +194,17 @@ as new entries.
 - **Student did:** Wrote the `for` loop, the conversion and the output.
 - **AI-written code:** Scaffolding only, plus a brace-spacing fix (`){` → `) {`).
 - **Notes:** Classroom task, not assessed.
+
+### 2026-10-06: Task 5.3.1 (default arguments)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 5.3.1.
+- **AI did:** Scaffolded the task by copying the Task 5.1.2 sources (step 1 of the
+  task), updating their headers and adding TODO markers. Explained default
+  arguments. Ran the program with test inputs.
+- **Student did:** Added the `= 6` default to `rollDie()`, and rewrote `main()` to
+  call `rollDie()` with no argument when none is supplied.
+- **AI-written code:** The scaffolding, plus a check in `main()` that rejects more
+  than one argument with a usage message and `exitProcess(1)`. This also gave the
+  previously unused `exitProcess` import a use.
+- **Notes:** Classroom task, not assessed.
