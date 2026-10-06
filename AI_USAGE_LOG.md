@@ -125,3 +125,15 @@ as new entries.
   lambda parameter, and changed the output format and usage message. Claude
   also wrote `tasks/task4_7/test.txt`.
 - **Notes:** Classroom task, not assessed.
+
+### 2026-10-06: Task 4.8 (building strings iteratively)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 4.8 (demo only; no code to write).
+- **AI did:** Explained the multi-module project layout, `measureTime` and
+  `buildString`. At the student's request, ran both demos for N = 20 up to 200,000
+  and tabulated the timings. Explained string immutability and quadratic vs
+  linear growth, and summarised the guide's StringBuilder section.
+- **Student did:** Studied the demo and the results.
+- **AI-written code:** None.
+- **Notes:** Classroom task, not assessed. No repo files changed apart from this log.
