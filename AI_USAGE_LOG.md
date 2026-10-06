@@ -167,3 +167,18 @@ as new entries.
   `numberOfSides`, and fixed spacing and trailing blank lines. Added a blank line
   after the header comment in `Die.kt`.
 - **Notes:** Classroom task, not assessed.
+
+### 2026-10-06: Task 5.2.1 (circle area and perimeter)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 5.2.1.
+- **AI did:** Explained expression-body functions. Wrote the scaffolding (the
+  imports, `circleArea()` copied from the guide as the task instructs, the
+  `main()` signature and the argument check). Built and ran the program with
+  test inputs.
+- **Student did:** Wrote `circlePerimeter()` and the body of `main()` (conversion,
+  function calls, 4 d.p. output).
+- **AI-written code:** Scaffolding only (see above), plus one blank line
+  between the two functions in `Circle.kt`.
+- **Notes:** Classroom task, not assessed. First task using the scaffolding rule
+  in CLAUDE.md.
