@@ -182,3 +182,15 @@ as new entries.
   between the two functions in `Circle.kt`.
 - **Notes:** Classroom task, not assessed. First task using the scaffolding rule
   in CLAUDE.md.
+
+### 2026-10-06: Task 5.2.2 (marks to grades)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 5.2.2.
+- **AI did:** Wrote the scaffolding (the import, `grade()` copied from the guide
+  as the task instructs, the `main()` signature and an `args.isEmpty()` check).
+  Explained `when` as an expression body and `for (arg in args)`. Ran the program
+  with test marks, including the 60 and 70 boundaries.
+- **Student did:** Wrote the `for` loop, the conversion and the output.
+- **AI-written code:** Scaffolding only, plus a brace-spacing fix (`){` → `) {`).
+- **Notes:** Classroom task, not assessed.
