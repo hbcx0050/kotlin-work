@@ -225,3 +225,15 @@ as new entries.
   total). In `Main.kt`, the scaffolding, removal of the TODO comment and
   `var` → `val` for the two parsed values.
 - **Notes:** Classroom task, not assessed.
+
+### 2026-10-06: Task 5.4.1 (extension function)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 5.4.1.
+- **AI did:** Wrote the scaffolding (empty `main()`, TODO markers). Explained
+  extension functions, receivers and `this`. Ran the program.
+- **Student did:** Wrote `String.isTooLong()` and the test calls in `main()`.
+- **AI-written code:** Scaffolding, two extra boundary test lines in `main()` (a
+  20-character and a 21-character string), and a final newline in
+  `StringTools.kt`.
+- **Notes:** Classroom task, not assessed.
