@@ -1,0 +1,5 @@
+short
+a bit longer
+this is the longest line in the file
+medium length line
+tiny

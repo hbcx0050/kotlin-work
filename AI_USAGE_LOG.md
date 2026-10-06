@@ -107,3 +107,21 @@ as new entries.
   edits in `tasks/task4_5/src/Main.kt`: `val sum` → `var sum`, `args.size > 1` →
   `args.size != 1`, and `0` → `0L` (overflow fix).
 - **Notes:** Classroom task, not assessed.
+
+### 2026-10-06: Task 4.7 (longest line in a file)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 4.7.
+- **AI did:** Explained reading files with `forEachLine`/`useLines`, lambdas and
+  `it`, and nullable types and smart casts (from a compile error). Reviewed two
+  drafts and listed the compile errors and logic gaps. On the student's request
+  ("fix it"), rewrote `Main.kt`, created a sample `test.txt`, then built and ran
+  it against several inputs.
+- **Student did:** Wrote the initial drafts (argument check, `Path`,
+  `forEachLine` loop with longest-line tracking).
+- **AI-written code:** Most of the final `tasks/task4_7/src/Main.kt`. Claude fixed
+  `String`, the `exitProcess` import and the `forEachLine` typo, replaced the
+  `String?`/text tracking with line-number and length counters plus a named
+  lambda parameter, and changed the output format and usage message. Claude
+  also wrote `tasks/task4_7/test.txt`.
+- **Notes:** Classroom task, not assessed.
