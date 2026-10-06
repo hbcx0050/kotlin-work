@@ -93,3 +93,17 @@ as new entries.
 - **Notes:** Clarified the scope of the rules. Classroom tasks are not assessed,
   so the portfolio's tutoring-only rule doesn't formally apply to them. The
   student still writes the task code to learn, and uses AI for guidance.
+
+### 2026-10-06: Task 4.5 (summing odd integers)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 4.5; read-through of guide Section 4.6 (`repeat()`, no task folder).
+- **AI did:** Explained `toInt()`, `for` loop and range syntax (`..`, `until`,
+  `step`, `downTo`), `Int` vs `Long` overflow, and `val` vs `var`. Built and ran
+  the program with test inputs and reported results. Reviewed the code and
+  pointed out the compile error, overflow, the zero-argument crash and tidy-ups.
+- **Student did:** Wrote the program (argument check, conversion, loop, output).
+- **AI-written code:** At the student's explicit request, Claude made three
+  edits in `tasks/task4_5/src/Main.kt`: `val sum` → `var sum`, `args.size > 1` →
+  `args.size != 1`, and `0` → `0L` (overflow fix).
+- **Notes:** Classroom task, not assessed.
