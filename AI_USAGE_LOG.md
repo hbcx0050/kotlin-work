@@ -280,3 +280,17 @@ as new entries.
   student's own edit hadn't been saved.
 - **Notes:** Classroom task, not assessed. The student already knows unit testing
   from Python and C.
+
+### 2026-10-06: Task 6.4 (unit testing with Gradle)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 6.4.
+- **AI did:** Explained the Gradle test configuration (`kotlin("test")`, JUnit
+  dependencies, `tasks.test`). At the student's request, ran every step:
+  `./gradlew test` before the fix, the fix, the run after the fix, an unchanged
+  rerun (UP-TO-DATE), `--rerun` and `--rerun-tasks`. Saved a copy of the failing
+  HTML report for the student to review, and explained incremental builds.
+- **Student did:** Reviewed the HTML test reports.
+- **AI-written code:** In `tasks/task6_4/src/main/kotlin/Grades.kt`, the boundary
+  fix `40..70` → `40..69` (the same fix the student worked out in Task 6.3).
+- **Notes:** Classroom task, not assessed. The tests were provided by the task.
