@@ -208,3 +208,20 @@ as new entries.
   than one argument with a usage message and `exitProcess(1)`. This also gave the
   previously unused `exitProcess` import a use.
 - **Notes:** Classroom task, not assessed.
+
+### 2026-10-06: Task 5.3.2 (rolling multiple dice)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 5.3.2.
+- **AI did:** Wrote the scaffolding (imports, the `main()` signature and the
+  argument check). Explained named and default arguments and
+  `substringBefore`/`substringAfter`. At the student's request, wrote all of
+  `rollDice()` in `Dice.kt`. Tidied `Main.kt` and ran the program with several
+  dice specs.
+- **Student did:** Wrote the spec parsing and the call in `Main.kt` (using
+  `split("d")`).
+- **AI-written code:** All of `tasks/task5_3_2/src/Dice.kt` (`rollDice()` with
+  defaults, side validation with an early `return`, a `repeat` loop and the
+  total). In `Main.kt`, the scaffolding, removal of the TODO comment and
+  `var` → `val` for the two parsed values.
+- **Notes:** Classroom task, not assessed.
