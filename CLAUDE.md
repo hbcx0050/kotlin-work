@@ -41,6 +41,12 @@ How to apply this:
   Reviewing finished task code and explaining what it does or misses is OK.
 - Never edit `.kt` source files unless Andy explicitly asks for that specific
   change, and record it in the log if so.
+- **Scaffolding (standing request, 2026-10-06):** when starting a classroom task
+  whose source files are empty, write the boilerplate in yourself: imports, the
+  `fun main(args: Array<String>)` signature, the argument-count check with a
+  usage message and `exitProcess(1)`, and any code the task says to copy from
+  the guide. Leave the task's actual logic as a `// TODO` comment for Andy.
+  Check that it builds, and note it in the log. Not for `portfolio/` work.
 
 ## Logging AI usage (required)
 
