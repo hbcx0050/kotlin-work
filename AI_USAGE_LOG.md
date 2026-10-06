@@ -264,3 +264,19 @@ as new entries.
   commented-out old function, updated the header comment and added a final
   newline.
 - **Notes:** Classroom task, not assessed. Chapter 5 complete.
+
+### 2026-10-06: Task 6.3 (unit testing grade())
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 6.3.
+- **AI did:** Explained `kotlin.test` (`@Test`, backtick names, `assertEquals`
+  argument order) and testing by equivalence partitions and boundaries. At the
+  student's request, wrote the full test suite. Ran the tests, which exposed the
+  bug at mark 70, and explained why the student's first fix attempt failed.
+- **Student did:** Added the guide's first example test. Diagnosed the range bug
+  and specified the correct fix (`40..69`, `70..100`).
+- **AI-written code:** 12 of the 13 tests in `tasks/task6_3/test/GradeTest.kt`.
+  Also applied the student's stated range fix to `src/Grades.kt`, because the
+  student's own edit hadn't been saved.
+- **Notes:** Classroom task, not assessed. The student already knows unit testing
+  from Python and C.
