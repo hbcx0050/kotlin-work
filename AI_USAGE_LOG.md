@@ -153,3 +153,17 @@ as new entries.
   `return` to `exitProcess(1)` (with import), and fixed brace spacing. Added a
   final newline to `Anagram.kt`.
 - **Notes:** Classroom task, not assessed.
+
+### 2026-10-06: Task 5.1.2 (dice roller)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 5.1.2.
+- **AI did:** Explained `Unit` return type, sets and `in`, and `Random.nextInt()`
+  bounds. At the student's request, tidied the code, then ran it with test inputs.
+- **Student did:** Copied `rollDie()` from the guide into `Die.kt`, as the task
+  instructs. Wrote `main()` (argument check, conversion, call).
+- **AI-written code:** In `tasks/task5_1_2/src/Main.kt`: replaced
+  `var result = rollDie(...)` with a plain call, renamed `noOfSIdes` to
+  `numberOfSides`, and fixed spacing and trailing blank lines. Added a blank line
+  after the header comment in `Die.kt`.
+- **Notes:** Classroom task, not assessed.
