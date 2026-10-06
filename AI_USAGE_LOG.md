@@ -294,3 +294,31 @@ as new entries.
 - **AI-written code:** In `tasks/task6_4/src/main/kotlin/Grades.kt`, the boundary
   fix `40..70` → `40..69` (the same fix the student worked out in Task 6.3).
 - **Notes:** Classroom task, not assessed. The tests were provided by the task.
+
+### 2026-10-06: Task 6.5 (Kotest)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 6.5.
+- **AI did:** Explained Kotest (FreeSpec, `shouldBe`, `assertSoftly`, `withClue`,
+  global soft assertions). At the student's request:
+  - wrote the 13 fine-grained tests (stage 1);
+  - refactored them into 5 coarse-grained tests (stage 2);
+  - temporarily broke `grade()` (`70..100` → `71..99`) to show soft-assertion
+    output (stage 3);
+  - removed the `assertSoftly` wrappers, created `testResources/kotest.properties`,
+    compared the `true` and `false` settings, then reverted `grade()` and the
+    setting (stage 4).
+- **Student did:** Reviewed the output of each stage.
+- **AI-written code:** All of `tasks/task6_5/test/GradeTest.kt` and
+  `tasks/task6_5/testResources/kotest.properties`. `src/Grades.kt` is back to
+  its original state.
+- **Notes:** Classroom task, not assessed. Chapter 6 complete.
+
+### 2026-10-06: End of session
+
+- **Progress:** Tasks 1.1 to 6.5 and Portfolio Week 1 are complete. **Next: Task
+  7.2** (the next folder after `task6_5`).
+- **Outstanding:** the 2026-10-02 entry (Tasks 3.1 to 4.4, done in another session)
+  still needs details filled in.
+- **Repo state:** everything committed and pushed; local `main` matches
+  `origin/main`.
