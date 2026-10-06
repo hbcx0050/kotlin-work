@@ -34,8 +34,10 @@ How to apply this:
   should stay at the level of "what does this message mean", not "change line X
   to Y". If a request crosses the line, say so plainly and suggest asking in a
   timetabled session.
-- **Classroom tasks (`tasks/`)**: explain the task, point to the right guide
-  section, give hints and conceptual guidance. Andy writes the code.
+- **Classroom tasks (`tasks/`)**: not assessed, so the portfolio restrictions
+  don't apply and AI help is permitted. Andy still chooses to write the code,
+  because the point is to learn Kotlin. So by default: explain the
+  task, point to the right guide section, give hints and conceptual guidance.
   Reviewing finished task code and explaining what it does or misses is OK.
 - Never edit `.kt` source files unless Andy explicitly asks for that specific
   change, and record it in the log if so.
@@ -57,6 +59,9 @@ entries.
   project wrapper), so `kotlin init` works in empty task folders.
 - Commit each task separately when Andy says it's done, with a message like
   `Task 4.2: if expressions and ranges`.
+- **Do not add `Co-Authored-By` (or any other AI attribution) trailers to commit
+  messages.** Andy's decision (2026-10-06): AI involvement is recorded in
+  `AI_USAGE_LOG.md`, not in commit metadata.
 - **Always `git pull` before starting** (work happens across multiple machines and
   sessions) and **push after committing**. The remote uses SSH
   (`git@github.com:hbcx0050/kotlin-work.git`); HTTPS push fails non-interactively.

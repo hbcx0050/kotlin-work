@@ -85,5 +85,11 @@ as new entries.
     not authenticate). Rebased them onto the 2026-10-02 work, with no conflicts,
     switched the remote to SSH, and pushed.
   - Created `CLAUDE.md` (rules for AI assistants in this repo) and this log.
-- **Student did:** Requested the sync and the logging setup.
+- **Student did:** Requested the sync and the logging setup. Decided that
+  commits should no longer carry `Co-Authored-By: Claude` trailers; AI
+  involvement is recorded in this log instead. Earlier commits are left as they
+  are (see the 2026-09-29 note).
 - **AI-written code:** None (documentation files only).
+- **Notes:** Clarified the scope of the rules. Classroom tasks are not assessed,
+  so the portfolio's tutoring-only rule doesn't formally apply to them. The
+  student still writes the task code to learn, and uses AI for guidance.
