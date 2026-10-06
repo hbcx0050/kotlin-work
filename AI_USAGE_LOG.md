@@ -137,3 +137,19 @@ as new entries.
 - **Student did:** Studied the demo and the results.
 - **AI-written code:** None.
 - **Notes:** Classroom task, not assessed. No repo files changed apart from this log.
+
+### 2026-10-06: Task 5.1.1 (anagrams function)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 5.1.1.
+- **AI did:** Summarised the guide's StringBuilder section. Explained block-body
+  function syntax and how the guide's `anagrams()` function works. At the
+  student's request, fixed syntax, validation and formatting issues, then ran
+  the program with test inputs.
+- **Student did:** Copied `anagrams()` from the guide into `Anagram.kt`, as the
+  task instructs. Wrote `main()` in `Main.kt`.
+- **AI-written code:** In `tasks/task5_1_1/src/Main.kt`: replaced the invalid
+  `val first, second = args[0], args[1]` with two `val` declarations, changed
+  `return` to `exitProcess(1)` (with import), and fixed brace spacing. Added a
+  final newline to `Anagram.kt`.
+- **Notes:** Classroom task, not assessed.
