@@ -250,3 +250,17 @@ as new entries.
 - **AI-written code:** Scaffolding. In tidy-up, removed the TODO comments and the
   commented-out old function, and added a final newline.
 - **Notes:** Classroom task, not assessed.
+
+### 2026-10-06: Task 5.5 (infix function)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 5.5.
+- **AI did:** Scaffolded the task by copying the Task 5.1.1 sources (step 1 of the
+  task) with TODO markers. Explained infix functions. Ran the program with the
+  5.1.1 test cases.
+- **Student did:** Converted `anagrams()` to `infix fun String.anagramOf()` and
+  changed `main()` to use the infix call.
+- **AI-written code:** Scaffolding. In tidy-up, removed the TODOs and the
+  commented-out old function, updated the header comment and added a final
+  newline.
+- **Notes:** Classroom task, not assessed. Chapter 5 complete.
