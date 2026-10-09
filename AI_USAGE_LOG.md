@@ -369,3 +369,21 @@ as new entries.
 - **AI-written code:** All of `tasks/task7_3_2/src/Main.kt`.
 - **Grey areas / notes:** Classroom task, not assessed. The student did not write
   the code themselves.
+
+### 2026-10-09: Task 7.7.1 (dataset statistics)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 7.7.1.
+- **AI did:** Explained the task and gave a step-by-step outline. Wrote the guide's
+  `readData()` in `Data.kt` and the argument-check boilerplate in `Main.kt`
+  (standing scaffolding request). Created the test files `odd.txt` and
+  `even.txt`. Ran the program and reported the compile errors and their
+  meaning. At the student's explicit request, fixed three small errors
+  (a misspelt `sorted`, a wrong variable name, `Stats.displayStats` ->
+  `displayStats`) and added the two missing min/max `println` lines.
+- **Student did:** Wrote the median function, `displayStats` and the call in
+  `main()`.
+- **AI-written code:** `readData()`, the `main()` boilerplate, the three
+  one-token fixes and the two print lines.
+- **Grey areas / notes:** Classroom task, not assessed. Missing and empty input
+  files still crash (not required by the task).
