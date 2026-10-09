@@ -338,3 +338,20 @@ as new entries.
   the out-of-bounds exception.
 - **Grey areas / notes:** Classroom task, not assessed. Before starting, checked
   that local `main` matched `origin/main` (it did; Tasks 1.1 to 6.5 all present).
+
+### 2026-10-09: Task 7.3.1 (list element access)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 7.3.1, plus fixing push access for this machine.
+- **AI did:** Explained the task and lists vs arrays and Python lists. Wrote the
+  guide's starting program (standing scaffolding request). At the student's
+  explicit request, wrote the six change lines in `tasks/task7_3_1/src/Main.kt`,
+  ran each step in turn (step 2 throws at runtime; steps 5 and 6 fail to
+  compile) and left the failing lines commented out. Diagnosed the HTTPS 403
+  push failure (Git Credential Manager held the `electrico11hd` credential) and
+  changed the remote URL to `https://hbcx0050@github.com/...`.
+- **Student did:** Signed in as `hbcx0050` with a personal access token and
+  confirmed the push worked.
+- **AI-written code:** All of `tasks/task7_3_1/src/Main.kt`.
+- **Grey areas / notes:** Classroom task, not assessed. The student did not
+  write their own predictions before the steps were run.
