@@ -322,3 +322,19 @@ as new entries.
   still needs details filled in.
 - **Repo state:** everything committed and pushed; local `main` matches
   `origin/main`.
+
+### 2026-10-09: Task 7.2 (arrays)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 7.2.
+- **AI did:** Explained `arrayOf()` vs `intArrayOf()` (boxed `Integer[]` vs
+  primitive `int[]`), what the `::class` / `.java` output means, and which
+  functions are auto-imported. Scaffolded `Main.kt` with the guide's `main()`
+  (standing scaffolding request). Ran the program before and after the change.
+- **Student did:** Changed `arrayOf()` to `intArrayOf()` on line 2 of `main()`.
+- **AI-written code:** The copied guide `main()`, and, at the student's explicit
+  request, the three exercise lines (7.2.1 to 7.2.3) in
+  `tasks/task7_2/src/Main.kt`, including a `try/catch` that prints a warning for
+  the out-of-bounds exception.
+- **Grey areas / notes:** Classroom task, not assessed. Before starting, checked
+  that local `main` matched `origin/main` (it did; Tasks 1.1 to 6.5 all present).
