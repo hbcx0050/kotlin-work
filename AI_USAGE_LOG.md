@@ -355,3 +355,17 @@ as new entries.
 - **AI-written code:** All of `tasks/task7_3_1/src/Main.kt`.
 - **Grey areas / notes:** Classroom task, not assessed. The student did not
   write their own predictions before the steps were run.
+
+### 2026-10-09: Task 7.3.2 (mutable lists)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 7.3.2.
+- **AI did:** Explained `mutableListOf()`, the MutableList methods, `remove` vs
+  `removeAt`, and `val` with mutable lists. Copied `Main.kt` from Task 7.3.1
+  (standing scaffolding request). At the student's explicit request, switched it
+  to `mutableListOf()` and wrote the demonstrations of `add`, `addAll`, `remove`,
+  `removeAll`, `removeAt` and `clear`, and ran the program.
+- **Student did:** Reviewed the output and confirmed they understood the methods.
+- **AI-written code:** All of `tasks/task7_3_2/src/Main.kt`.
+- **Grey areas / notes:** Classroom task, not assessed. The student did not write
+  the code themselves.
