@@ -417,3 +417,15 @@ as new entries.
   `https://hbcx0050@github.com/hbcx0050/kotlin-work.git`. The AI's own shell cannot
   push (no credential available to it), so the student pushes from a normal
   PowerShell window outside VS Code.
+
+### 2026-10-10: Repo housekeeping decisions (addendum to end of session)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Repository settings only; no task work.
+- **AI did:** Set this clone's local `user.name` / `user.email` to match the
+  author used in the earlier commits (`Andy Nowosinski [hbcx0050]`), because
+  Tasks 7.2 to 7.7.2 and the logs were committed as `electrico11hd`. Past commits
+  were not rewritten. Left `tasks/task7_7_2/phone.csv` untracked because the
+  task's own `.gitignore` excludes it. Left the 2026-10-02 entry as is: nothing
+  beyond the commit history is known about that session, and details cannot be
+  invented.
