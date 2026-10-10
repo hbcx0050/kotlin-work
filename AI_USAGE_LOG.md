@@ -387,3 +387,21 @@ as new entries.
   one-token fixes and the two print lines.
 - **Grey areas / notes:** Classroom task, not assessed. Missing and empty input
   files still crash (not required by the task).
+
+### 2026-10-10: Task 7.7.2 (phone book)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 7.7.2. Completes Chapter 7 (Tasks 7.2 to 7.7.2).
+- **AI did:** Explained the task as a sequence of steps, `readln()`, extension
+  function `this`, and destructuring in `for ((name, number) in this)`. Created
+  the test data file `phone.csv` (three invented contacts). Ran the program with
+  scripted input (known name, new name, persistence across runs), reported the
+  compile errors, and, at the student's explicit request, fixed the two
+  `readLn` -> `readln` syntax errors in `Main.kt`.
+- **Student did:** Wrote `Database.load`, `Database.save` and the `main()` loop.
+- **AI-written code:** The two `readln` fixes in `Main.kt` (including splitting
+  the prompt out of the second call). `phone.csv` is test data.
+- **Grey areas / notes:** Classroom task, not assessed. No exit command or input
+  validation (optional extras not done). Pushes from the AI's shell fail
+  (no stored credential for `hbcx0050`); Tasks 7.7.1 and 7.7.2 await a manual
+  push.
