@@ -405,3 +405,15 @@ as new entries.
   validation (optional extras not done). Pushes from the AI's shell fail
   (no stored credential for `hbcx0050`); Tasks 7.7.1 and 7.7.2 await a manual
   push.
+
+### 2026-10-10: End of session
+
+- **Progress:** Tasks 1.1 to 7.7.2 are complete (Chapter 7 done). **Next: Task 8.3**
+  (then 8.4.1, 8.4.2, 8.5).
+- **Outstanding:** the 2026-10-02 entry (Tasks 3.1 to 4.4) still needs details
+  filled in.
+- **Repo / GitHub:** fsck clean. `origin/main` was verified at `365c9e3` (Task
+  7.7.2) after the student pushed manually. The remote URL is now
+  `https://hbcx0050@github.com/hbcx0050/kotlin-work.git`. The AI's own shell cannot
+  push (no credential available to it), so the student pushes from a normal
+  PowerShell window outside VS Code.
