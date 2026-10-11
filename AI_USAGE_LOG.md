@@ -448,3 +448,13 @@ as new entries.
   guard, which is close to a step-by-step outline of the solution. The AI also
   listed, before submission, cosmetic style points (spacing, final newlines) in the
   student's files; the student made no changes in response that the AI is aware of.
+
+### 2026-10-11: End of session
+
+- **Progress:** Tasks 1.1 to 7.7.2 and Portfolio Weeks 1 and 2 are complete
+  (Week 2 passed 16/16 per the student). **Next: Task 8.3** (then 8.4.1, 8.4.2, 8.5).
+- **Outstanding:** the 2026-10-02 entry (Tasks 3.1 to 4.4) still needs details
+  filled in.
+- **Repo / GitHub:** Week 2 commit `d671add` was pushed by the student from their own
+  PowerShell; `origin/main` was verified to match local `main`. This closing entry is
+  committed locally and needs a manual push.
