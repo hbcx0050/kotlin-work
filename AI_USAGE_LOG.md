@@ -429,3 +429,22 @@ as new entries.
   task's own `.gitignore` excludes it. Left the 2026-10-02 entry as is: nothing
   beyond the commit history is known about that session, and details cannot be
   invented.
+
+### 2026-10-11: Portfolio Week 2 (triangles and redact)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Portfolio Week 2 (`isValidTriangle()`, `triangleArea()`, `redact()`).
+- **AI did:** Read the brief and the week 2 files. Gave a step-by-step layout of the
+  task. Explained function syntax, `Triple` destructuring, default arguments,
+  `String.length`, `repeat`, `Char.toString()`, `replace` and the empty-target edge
+  case, using unrelated examples. Read the saved files to confirm they were saved,
+  ran `./kotlin test` (16/16 passed) and ran the `redact` program on temporary
+  files outside the repo.
+- **Student did:** Wrote all the code in `Triangles.kt` and `Redaction.kt`, and
+  submitted to Gradescope (all 16 tests passed per the student).
+- **AI-written code:** None. The AI did not create or edit any `.kt` file.
+- **Grey areas / notes:** The guidance on `redact()` named the specific standard
+  library functions to use (`repeat`, `toString`, `replace`) and the empty-target
+  guard, which is close to a step-by-step outline of the solution. The AI also
+  listed, before submission, cosmetic style points (spacing, final newlines) in the
+  student's files; the student made no changes in response that the AI is aware of.
