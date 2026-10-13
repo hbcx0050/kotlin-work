@@ -656,3 +656,45 @@ as new entries.
 - **Grey areas / notes:** Classroom task, not assessed. No `test.data` file
   was committed to `tasks/task9_6/` — testing this session used scratch
   files outside the repo instead.
+
+### 2026-10-13: Task 10.1 (null safety)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 10.1. Fully-provided observe-and-explore task; no
+  scaffolding needed.
+- **AI did:** Ran steps 1 and 2 as given (`./kotlin run hello` -> `bonjour`,
+  `./kotlin run zzz` -> `null`). For step 3, explained in advance why
+  swapping `println(result)` for `display(result)` should fail to compile
+  (`Map` lookup returns a nullable `V?`; `display(text: String)` requires a
+  non-null `String`), corrected two misconceptions along the way (that
+  `put(parts[0].trim(), parts[1].trim())` builds a Pair/tuple — it's just a
+  two-argument function call; and that `Map` indexing shouldn't work because
+  it's "a set" — `Map` is exactly a dictionary and that's why `[word]`
+  indexing is supported), then rebuilt to confirm the predicted "Argument
+  type mismatch: actual type is 'String?', but 'String' was expected" error.
+  Gave a full line-by-line trace of the program's flow on request. Corrected
+  a further misconception that `display()` accepts "a string, or no string
+  so null" as two valid options — it declares a single non-nullable `String`
+  parameter type and Kotlin compares types, not runtime values.
+- **Student did:** Made the step-3 edit themselves (commented out
+  `println(result)`, uncommented `display(result)`) and ran the build to see
+  the error.
+- **AI-written code:** None.
+- **Grey areas / notes:** Classroom task, not assessed. `Main.kt` is left in
+  the state the task's step 3 instructs — `display(result)` uncommented,
+  `println(result)` commented out — which does not compile. That's the
+  deliberate point of the exercise (to see the compile error), so it was
+  committed as-is rather than reverted back to a buildable state.
+
+### 2026-10-13: End of session
+
+- **Progress:** Tasks 1.1 to 10.1 are complete (Chapters 1–9 fully done;
+  Task 10.1 done, rest of Chapter 10 remaining). **Next: Task 10.3.1.**
+- **Outstanding:** the 2026-10-02 entry (Tasks 3.1 to 4.4) still needs
+  details filled in. `tasks/task9_6/` has no committed `test.data` file.
+  `tasks/task10_1/src/Main.kt` currently fails `./kotlin build` by design
+  (see the entry above) — the next session should be aware of this before
+  assuming a build failure there is a regression.
+- **Repo / GitHub:** everything in this entry and the tasks above committed
+  and pushed from this session; `origin/main` should match local `main`
+  after the push that follows this entry.
