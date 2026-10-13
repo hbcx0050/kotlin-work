@@ -555,3 +555,23 @@ as new entries.
   built-in `count { }`) and the test calls in `main()`.
 - **AI-written code:** None.
 - **Grey areas / notes:** Classroom task, not assessed.
+
+### 2026-10-13: Task 9.2 (exceptions and flow of control)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 9.2. Observe-then-tweak task; code was already
+  complete except for one commented-out line the task explicitly instructs
+  the student to uncomment.
+- **AI did:** Ran `./kotlin build`/`./kotlin run` before and after the
+  student's edit, and asked for a prediction before running the "after" case.
+  Explained the result against the student's prediction: a normal return
+  unwinds the call stack one frame at a time (each function finishing and
+  printing its own "Leaving" line), whereas an uncaught exception tears
+  through every calling frame without letting any of them finish, which is
+  why none of the three "Leaving" lines printed, not just `second()`'s.
+  Walked through the stack trace as the call chain in reverse.
+- **Student did:** Uncommented `println(data[5])` in `second()` in `Main.kt`
+  (the one change the task instructs), and made (then corrected) a
+  prediction about the output.
+- **AI-written code:** None.
+- **Grey areas / notes:** Classroom task, not assessed.
