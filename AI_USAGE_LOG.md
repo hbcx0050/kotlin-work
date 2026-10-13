@@ -503,3 +503,19 @@ as new entries.
   warnings on `coldestStation`/`warmestStation` are harmless here (`minBy`/`maxBy`
   on a non-empty list never return null) but were not pointed out to the student
   before this entry was written.
+
+### 2026-10-13: Task 8.4.1 (sequences)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 8.4.1. No scaffolding needed (`Main.kt` already had the
+  task's own starter code to edit).
+- **AI did:** Explained lazy vs. eager evaluation and `Sequence`/`asSequence()`/
+  terminal operations, with a separate, unrelated example to show the laziness
+  (not the task's own numbers). Ran `./kotlin build` and `./kotlin run`.
+- **Student did:** Wrote the full chain in `Main.kt`
+  (`.asSequence().filter{it%2==1}.map{it*it}.toList()`).
+- **AI-written code:** None.
+- **Grey areas / notes:** Classroom task, not assessed. The guide's own exercise
+  text spells out the exact four-step chain to write, so the line between
+  "explaining the concept" and "giving the answer" is thin here by the task's
+  own design, not by choice in this session.
