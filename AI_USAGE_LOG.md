@@ -458,3 +458,48 @@ as new entries.
 - **Repo / GitHub:** Week 2 commit `d671add` was pushed by the student from their own
   PowerShell; `origin/main` was verified to match local `main`. This closing entry is
   committed locally and needs a manual push.
+
+### 2026-10-13: Task 8.3 scaffolding
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 8.3 (weather station temperature analysis), start of
+  the session. No task logic written yet.
+- **AI did:** Pulled the remote (fast-forward, picking up Tasks 7.2–7.7.2 and
+  Portfolio Week 2 that were pushed since the last local session). Added the
+  command-line argument-count check (usage message + `exitProcess(1)`) to
+  `src/Main.kt`, which was otherwise empty, per the standing scaffolding
+  request, leaving the actual logic (call `fetchData()`, find the min/max
+  stations, compute and print the average) as a `// TODO` comment. Did not
+  touch `src/Funcs.kt` (`fetchData()`'s own TODO body), which was already
+  part of the task template. Ran `./kotlin build`, which fails with "Cannot
+  infer type for type parameter 'E'" at `Funcs.kt:8` — expected, since
+  `fetchData()`'s `buildList { }` is still empty, not caused by this
+  session's edit.
+- **Student did:** Nothing yet this session.
+- **AI-written code:** The argument-count check and usage message added to
+  `src/Main.kt` (scaffolding only, per the standing request).
+- **Grey areas / notes:** None beyond the standing scaffolding exception.
+
+### 2026-10-13: Task 8.3 (weather stations), completed
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 8.3.
+- **AI did:** Explained `buildList`, `Path.forEachLine`, the infix `to` function
+  (and how it relates to Task 5.5's infix functions), `minBy`/`maxBy`, and
+  `sumOf`, using fill-in-the-blank skeletons rather than the finished lines.
+  Answered a question about where `add()` comes from inside `buildList` (the
+  implicit `MutableList` receiver) and what `a to b` means. Ran `./kotlin build`,
+  which failed on a stray leading backtick on `Main.kt` line 1; reported the
+  error. At the student's explicit request, deleted that one backtick. Ran
+  `./kotlin build` (clean, only pre-existing "unnecessary safe call" warnings
+  on `coldestStation?.first` etc.), `./kotlin run temps.csv` (correct output:
+  coldest Stn 3 at -0.2, warmest Stn 12 at 1.3, average 0.5625) and `./kotlin run`
+  with no argument (prints the usage message and exits 1, as intended).
+- **Student did:** Wrote all of `fetchData()` in `Funcs.kt` and all of `main()`
+  in `Main.kt`, including the one-line average (the chapter's challenge).
+- **AI-written code:** The single stray backtick deletion in `Main.kt`, at the
+  student's explicit request. No other code changes.
+- **Grey areas / notes:** Classroom task, not assessed. The safe-call (`?.`)
+  warnings on `coldestStation`/`warmestStation` are harmless here (`minBy`/`maxBy`
+  on a non-empty list never return null) but were not pointed out to the student
+  before this entry was written.
