@@ -575,3 +575,31 @@ as new entries.
   prediction about the output.
 - **AI-written code:** None.
 - **Grey areas / notes:** Classroom task, not assessed.
+
+### 2026-10-13: Task 9.4 (catch block ordering)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 9.4. Observe-and-explore task; the provided
+  `src/main/kotlin/Main.kt` was already complete (four `catch` blocks in an
+  order where the general `catch (Exception)` sits above the specific
+  `catch (ArithmeticException)`).
+- **AI did:** Ran `./gradlew run` with three scripted inputs (valid division,
+  divide-by-zero, invalid number) and showed that divide-by-zero printed
+  "Some sort of error occurred" instead of the dedicated ArithmeticException
+  message, because Kotlin matches `catch` blocks top to bottom and the
+  broader `Exception` block (a superclass of `ArithmeticException`) matched
+  first. Explained the mechanism and that Kotlin, unlike Java, does not flag
+  this with a compile error. At the student's explicit request, after the
+  student proposed the correct reordering themselves, reordered the four
+  `catch` blocks in `src/main/kotlin/Main.kt` to
+  `NumberFormatException, ArithmeticException, IllegalArgumentException, Exception`
+  (also flagged that the student had the build-output copy at
+  `tasks/task9_4/bin/main/Main.kt` open rather than the real source file).
+  Rebuilt and reran all three scripted inputs, confirming divide-by-zero now
+  prints "You tried to divide by zero".
+- **Student did:** Diagnosed the bug from the observed output and specified
+  the fix (which exception type goes where) before any edit was made.
+- **AI-written code:** The catch-block reordering in
+  `tasks/task9_4/src/main/kotlin/Main.kt`, at the student's explicit request,
+  implementing the ordering the student specified.
+- **Grey areas / notes:** Classroom task, not assessed.
