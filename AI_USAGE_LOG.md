@@ -519,3 +519,39 @@ as new entries.
   text spells out the exact four-step chain to write, so the line between
   "explaining the concept" and "giving the answer" is thin here by the task's
   own design, not by choice in this session.
+
+### 2026-10-13: Task 8.4.2 (sequence performance demo)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 8.4.2. Observe-only task; no code to write (both
+  `Benchmark.kt` and the provided `war-and-peace.txt` test file were already
+  complete/present).
+- **AI did:** Ran `./kotlin build` and `./kotlin run war-and-peace.txt`
+  (without-sequence ~44.7ms, with-sequence ~20.4ms). Explained why the
+  sequence version is faster (eager `List` chaining materializes an
+  intermediate list at every step vs. a lazy `Sequence` streaming each
+  element through the whole chain in one pass), using a second, simpler
+  5-element walkthrough (with print statements to show evaluation order) at
+  the student's request, since the War and Peace scale made the mechanism
+  hard to see directly. Also explained what `asSequence()` does under the
+  hood (a cheap wrapper, not a copy) and why chaining Sequence operations
+  avoids intermediate collections (iterator-wrapping-iterator vs.
+  collection-to-collection).
+- **Student did:** Reviewed the output and explanations.
+- **AI-written code:** None.
+- **Grey areas / notes:** Classroom task, not assessed. No files changed.
+
+### 2026-10-13: Task 8.5 (higher-order functions), completed
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 8.5. Completes Chapter 8 (Tasks 8.3 to 8.5).
+- **AI did:** Explained function types (`(Char) -> Boolean`), higher-order
+  functions and extension functions, pointing to the guide's own
+  `howMany()`/`isEnglishVowel()` example rather than writing the task's
+  version. No scaffolding needed (no command-line args in this task). Ran
+  `./kotlin build` and `./kotlin run` (vowel count 3, digit count 0 for
+  "Hello, World!" — correct).
+- **Student did:** Wrote all of `String.howMany()` in `Count.kt` (via the
+  built-in `count { }`) and the test calls in `main()`.
+- **AI-written code:** None.
+- **Grey areas / notes:** Classroom task, not assessed.
