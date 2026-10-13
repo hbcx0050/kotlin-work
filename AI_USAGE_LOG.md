@@ -603,3 +603,56 @@ as new entries.
   `tasks/task9_4/src/main/kotlin/Main.kt`, at the student's explicit request,
   implementing the ordering the student specified.
 - **Grey areas / notes:** Classroom task, not assessed.
+
+### 2026-10-13: Task 9.6 scaffolding
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 9.6 (dataset variance), start of this part of the
+  session. No task logic written yet; `test/VarianceTest.kt` was already
+  provided and not touched.
+- **AI did:** Fetched the guide's "Error Handling Task" page, which gives
+  `readData()` verbatim as code to copy. Per the standing scaffolding
+  request, wrote that `readData()` into `src/Data.kt` unchanged, and added
+  the command-line argument-count check (usage message + `exitProcess(1)`)
+  to `src/Main.kt`, leaving the rest of `main()` (call `readData()` and
+  `variance()`, display size and variance to 5 decimal places, handle
+  exceptions and exit non-zero) as a `// TODO`. Left `src/Stats.kt`
+  (`variance()`, using `require()`) untouched — that is the task's actual
+  exercise. Ran `./kotlin build`: main sources compile cleanly; the test
+  task fails with 5 "Unresolved reference 'variance'" errors, expected since
+  `variance()` doesn't exist yet.
+- **Student did:** Nothing yet this session.
+- **AI-written code:** `readData()` in `src/Data.kt` (copied verbatim from
+  the guide) and the argument-count check in `src/Main.kt` (scaffolding
+  only, per the standing request).
+- **Grey areas / notes:** None beyond the standing scaffolding exception.
+
+### 2026-10-13: Task 9.6 (dataset variance), completed
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 9.6. Completes Chapter 9 (Tasks 9.2, 9.4, 9.6).
+- **AI did:** Explained `require()`/`IllegalArgumentException` and the
+  variance formula. Over three rounds, ran `./kotlin build` and reported
+  (without fixing) the student's own compile errors: in `Main.kt`, using
+  `data` inside the same `val data = try { ... }` statement that was still
+  defining it; in `Stats.kt`, calling `.average { }` with a lambda (no such
+  overload exists) and using `**` for exponentiation (not a Kotlin
+  operator). Also pointed out, unprompted, that the student's new `catch`
+  blocks repeated Task 9.4's exact ordering mistake (general `Exception`
+  before specific `IllegalArgumentException`). Once it compiled, ran
+  `./kotlin test` (5/5 passing) and `./kotlin run` against scratch data
+  files outside the repo (valid, empty, single-value, malformed), all
+  behaving correctly. At the student's invitation to "tidy anything up if
+  necessary," removed the now-stale TODO comment block and fixed spacing
+  (`try{` -> `try {`, `catch (e:Exception)` -> `catch (e: Exception)`) in
+  `Main.kt`; rebuilt/retested/reran to confirm no behaviour changed.
+- **Student did:** Wrote `variance()` in `Stats.kt` (including `require()`
+  and the sample-variance formula with `sumOf { }`) and all of `main()` in
+  `Main.kt`, including the try/catch structure; fixed all three compile
+  errors themselves after they were reported; reordered the `catch` blocks
+  after being told about the repeated ordering mistake.
+- **AI-written code:** The tidy-up only (TODO-comment removal and spacing)
+  in `Main.kt`, done at the student's invitation. No logic changes.
+- **Grey areas / notes:** Classroom task, not assessed. No `test.data` file
+  was committed to `tasks/task9_6/` — testing this session used scratch
+  files outside the repo instead.
