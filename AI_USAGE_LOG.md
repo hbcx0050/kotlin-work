@@ -715,3 +715,21 @@ as new entries.
   from the task README, at the student's explicit request.
 - **Grey areas / notes:** Classroom task, not assessed. The edit is a
   deviation from the usual "Andy writes the code" default, made on request.
+
+### 2026-10-18: Task 10.3.2 (nullable parameter handled inside the function)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 10.3.2. Provided-code task; no scaffolding needed.
+- **AI did:** Ran step 1 (build fails: "Argument type mismatch: actual type
+  is 'String?', but 'String' was expected"). At the student's explicit
+  request, changed `display()` in `Main.kt` to take `String?` with the
+  `when` block from the task README (adding the `fun` keyword the README
+  omits). Build succeeds; `hello` -> `BONJOUR`, `computer` -> `ORDINATEUR`,
+  `zzz` -> `?`. Explained the lesson. Also committed Task 10.3.1 (local
+  only; push failed, see below).
+- **Student did:** Asked for the edit and runs.
+- **AI-written code:** The `display()` change in `Main.kt`, from the task
+  README, at the student's explicit request.
+- **Grey areas / notes:** Classroom task, not assessed. On this machine
+  `origin` is HTTPS and both HTTPS and SSH pushes failed, so the Task 10.3.1
+  commit is not yet on GitHub.
