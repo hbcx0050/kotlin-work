@@ -749,3 +749,30 @@ as new entries.
   student's explicit request.
 - **Grey areas / notes:** Classroom task, not assessed. Behaviour differs
   from 10.3.2 by design (`null` instead of `?`); Task 10.5 restores `?`.
+
+### 2026-10-18: Task 10.5 (safe call and Elvis operators), completed
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 10.5. Provided-code task; no scaffolding needed.
+- **AI did:** Explained `?:`. Corrected the student's draft, which had the
+  operands reversed (`"?" ?: text.uppercase()`): the real value goes first,
+  the default last. At the student's explicit request, replaced the `when`
+  in `display()` with `println(text?.uppercase() ?: "?")`. Built and ran:
+  `hello` -> `BONJOUR`, `zzz` -> `?`.
+- **Student did:** Predicted the program's output correctly (same as
+  10.3.2); drafted the idea of the one-liner but with operands in the wrong
+  order.
+- **AI-written code:** The one-line `display()` body in `Main.kt`, at the
+  student's explicit request.
+- **Grey areas / notes:** Classroom task, not assessed. Completes Chapter 10.
+
+### 2026-10-18: End of session
+
+- **Progress:** Tasks 1.1 to 10.5 complete (Chapters 1-10 done). **Next:
+  Task 11.4.1.**
+- **Outstanding:** the 2026-10-02 entry (Tasks 3.1 to 4.4) still needs
+  details filled in. `tasks/task9_6/` has no committed `test.data`.
+- **Repo / GitHub:** this machine's `origin` is HTTPS and pushing fails
+  non-interactively (SSH push also rejected, likely no key registered). The
+  commits for Tasks 10.3.1, 10.3.2, 10.4 and 10.5 are local only until
+  pushed from an authenticated machine.
