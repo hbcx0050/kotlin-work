@@ -698,3 +698,20 @@ as new entries.
 - **Repo / GitHub:** everything in this entry and the tasks above committed
   and pushed from this session; `origin/main` should match local `main`
   after the push that follows this entry.
+
+### 2026-10-16: Task 10.3.1 (when expression on a nullable)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 10.3.1. Provided-code task; no scaffolding needed.
+- **AI did:** Ran step 1 (`./kotlin build` fails with "Argument type
+  mismatch: actual type is 'String?', but 'String' was expected"). At the
+  student's explicit request, replaced `display(result)` in `Main.kt` with
+  the `when (result)` block given in the task README. Ran step 3 (build
+  succeeds) and step 4 (`hello` -> `BONJOUR`, `zzz` -> `?`). Explained the
+  smart-cast idea behind the task.
+- **Student did:** Asked for the edit and the runs; will write the code
+  themselves on later tasks.
+- **AI-written code:** The 4-line `when` block in `Main.kt`, copied verbatim
+  from the task README, at the student's explicit request.
+- **Grey areas / notes:** Classroom task, not assessed. The edit is a
+  deviation from the usual "Andy writes the code" default, made on request.
