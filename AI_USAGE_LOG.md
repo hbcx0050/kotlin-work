@@ -733,3 +733,19 @@ as new entries.
 - **Grey areas / notes:** Classroom task, not assessed. On this machine
   `origin` is HTTPS and both HTTPS and SSH pushes failed, so the Task 10.3.1
   commit is not yet on GitHub.
+
+### 2026-10-18: Task 10.4 (safe call operator)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 10.4. Provided-code task; no scaffolding needed.
+- **AI did:** Explained `?.` and gave a hint about what `println(null)`
+  prints. At the student's explicit request ("tweak the code"), replaced the
+  `when` in `display()` with `println(text?.uppercase())`. Withheld the run
+  until the student made a prediction, then built and ran: `hello` ->
+  `BONJOUR`, `zzz` -> `null`.
+- **Student did:** Correctly predicted both outputs, including that `zzz`
+  prints `null` rather than `?`.
+- **AI-written code:** The one-line `display()` body in `Main.kt`, at the
+  student's explicit request.
+- **Grey areas / notes:** Classroom task, not assessed. Behaviour differs
+  from 10.3.2 by design (`null` instead of `?`); Task 10.5 restores `?`.
