@@ -797,3 +797,25 @@ as new entries.
 - **Grey areas / notes:** Classroom task, not assessed. The attribute types
   and operation signatures may not match Figure 11.3.3 exactly (AI could not
   read the figure).
+
+### 2026-10-18: Task 11.4.2 (Mermaid class diagram), skipped
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 11.4.2 was reviewed and deliberately skipped.
+- **AI did:** Explained the task (same Student/Module diagram written as
+  Mermaid text) and, when asked, said it is unassessed and not required by
+  later tasks as far as could be seen.
+- **Student did:** Decided to skip it.
+- **AI-written code:** None.
+- **Grey areas / notes:** `tasks/task11_4_2/mermaid.md` still contains the
+  placeholder diagram.
+
+### 2026-10-18: End of session (week close)
+
+- **Progress:** Tasks 1.1 to 11.4.1 complete (Chapters 1-10 and 11.4.1);
+  11.4.2 skipped. **Next: Task 12.1.**
+- **Outstanding:** the 2026-10-02 entry (Tasks 3.1 to 4.4) still needs
+  details filled in. `tasks/task9_6/` has no committed `test.data`.
+  Attribute types and operation signatures in the Task 11.4.1 diagram were
+  not checked against Figure 11.3.3.
+- **Repo / GitHub:** see push result below.
