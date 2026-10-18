@@ -776,3 +776,24 @@ as new entries.
   non-interactively (SSH push also rejected, likely no key registered). The
   commits for Tasks 10.3.1, 10.3.2, 10.4 and 10.5 are local only until
   pushed from an authenticated machine.
+
+### 2026-10-18: Task 11.4.1 (UML class diagram in draw.io)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 11.4.1. No code; draw.io diagram of `Student` and
+  `Module` with an "enrols on" association.
+- **AI did:** Fetched the guide pages (11.3, 11.4, 11.5) and wrote out the
+  task steps. The design-level figure is image-only, so suggested attribute
+  types (`Int`/`String`) and operation signatures were AI guesses and are
+  labelled as such in the diagram. Reviewed the exported PNG and spotted
+  three issues: wrong filename (`student.drawio.png`), a leftover arrowhead
+  on the association, and unverified attribute/operation text. After the
+  re-export, confirmed the arrowheads are gone and removed the old PNG.
+- **Student did:** Drew the diagram in draw.io, saved and exported it
+  themselves (draw.io committed to GitHub directly), fixed the arrowhead and
+  re-exported as `student.png`.
+- **AI-written code:** None. The attribute and operation text in the diagram
+  was typed by the student, using AI-suggested wording.
+- **Grey areas / notes:** Classroom task, not assessed. The attribute types
+  and operation signatures may not match Figure 11.3.3 exactly (AI could not
+  read the figure).
