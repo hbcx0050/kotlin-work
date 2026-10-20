@@ -907,3 +907,16 @@ as new entries.
 - **AI-written code:** The scaffolding, all of `Main.kt`, and the
   formatting-only changes to `Circle.kt`.
 - **Grey areas / notes:** Classroom task, not assessed.
+
+### 2026-10-20: Task 12.4.2 (overriding toString())
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.4.2.
+- **AI did:** Explained the task (the inherited `Any.toString()`, the
+  `override` rules, methods vs extension functions) and predicted the default
+  `Point@hash` output. Ran the student's code, then reformatted it: removed
+  the placeholder comments and extra blank lines, and fixed spacing in the
+  `toString()` signature.
+- **Student did:** Wrote `main()` and the `toString()` override (block body).
+- **AI-written code:** Formatting changes only.
+- **Grey areas / notes:** Classroom task, not assessed.
