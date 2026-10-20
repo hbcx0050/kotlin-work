@@ -819,3 +819,26 @@ as new entries.
   Attribute types and operation signatures in the Task 11.4.1 diagram were
   not checked against Figure 11.3.3.
 - **Repo / GitHub:** see push result below.
+
+### 2026-10-20: Task 12.1 (Point class: properties, constructor, methods)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.1 (Kotlin part). Python part deliberately skipped.
+- **AI did:** Pulled the repo and summarised progress. Fetched guide pages
+  12.1 and 12.2 and wrote out the task steps. Scaffolded `Point.kt` with the
+  starter class the guide says to copy, and an empty `main()` with a TODO.
+  At the student's request, gave fill-in-the-blank skeletons for `Point.kt`,
+  `Main.kt`, `point.py` and `main.py`, with the key syntax given and the
+  expressions left blank. Reviewed the finished code. Fixed a missing `")`
+  in `Main.kt`. At the student's request, changed `main()` to match the spec
+  (a non-origin point; distance to (4.5, 7.0)) and changed `p : Point` to
+  `p: Point`.
+- **Student did:** Filled in the Kotlin skeletons: the `Point` class with
+  `val` properties and default values (beyond the task), `distance()`,
+  `distanceTo()` and the main program.
+- **AI-written code:** The scaffolding; the skeleton structure; the syntax fix;
+  the coordinate and label changes in `main()`.
+- **Grey areas / notes:** Classroom task, not assessed. The skeletons were
+  close to the full solution (at the student's explicit request). The Python
+  files `python/point.py` and `python/main.py` were not done: the student
+  knows Python classes already and chose to skip them.
