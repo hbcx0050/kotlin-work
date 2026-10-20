@@ -932,3 +932,17 @@ as new entries.
 - **AI-written code:** None.
 - **Grey areas / notes:** Classroom task, not assessed. The AI ran the
   commands itself instead of the student.
+
+### 2026-10-20: Task 12.5.2 (custom getter)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.5.2.
+- **AI did:** Explained custom getters (`get()`, `field`, the `_name`
+  constructor parameter). Copied the guide's `Person` class into `Person.kt`
+  (the task says to copy it). At the student's request, wrote the two lines
+  in `main()` that create a `Person` and print its name, then ran it.
+- **Student did:** Read and understood the getter mechanism; delegated the
+  trivial `main()` lines.
+- **AI-written code:** All of it (the class copied from the guide, plus the
+  two `main()` lines).
+- **Grey areas / notes:** Classroom task, not assessed.
