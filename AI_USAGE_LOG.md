@@ -1011,3 +1011,24 @@ as new entries.
   changes.
 - **Grey areas / notes:** Classroom task, not assessed. Case-insensitive input
   (optional) was not added.
+
+### 2026-10-20: Task 12.8.2 (playing cards: Rank enum, Card class, deck)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.8.2 (the optional nested-enum extension was not
+  done).
+- **AI did:** Explained the task and the `Suit` model. At the student's
+  request, wrote fill-in-the-blank skeletons for `Rank.kt` (`Ace` and `Two`
+  given), `Card.kt` and `Main.kt`, then gave the steps in order. Ran the
+  student's version, which failed to compile: `Rank.toString()` had a block
+  body with no return type, so it returned `Unit`. Fixed it by rewriting it
+  as the expression body `= "$symbol"` (matching `Suit`), and removed
+  trailing whitespace in `Card.kt`. Checked the output: 52 unique cards,
+  in a different order on each run.
+- **Student did:** Filled in the skeletons: the remaining `Rank` constants,
+  `Card` property types, `fullName`, `toString()`, and the deck loops,
+  shuffle and print.
+- **AI-written code:** The skeleton structure, the `Rank.toString()` fix,
+  and the formatting change.
+- **Grey areas / notes:** Classroom task, not assessed. The skeletons were
+  close to the full solution (at the student's explicit request).
