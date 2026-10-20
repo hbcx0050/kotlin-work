@@ -976,3 +976,19 @@ as new entries.
 - **AI-written code:** All of it (copied from the guide, plus `main()`).
 - **Grey areas / notes:** Classroom task, not assessed. The second test person
   goes beyond the task.
+
+### 2026-10-20: Section 12.6 (visibility) and Task 12.7 (data classes)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Section 12.6 (reading only, no task) and Task 12.7.
+- **AI did:** Summarised 12.6 (`private` members, `operator fun get` and
+  `iterator`, public API vs private implementation). For 12.7, at the
+  student's request, made all three edits and ran each stage: added `data`
+  to `Person`, uncommented the last five lines of `Main.kt`, and moved
+  `isMarried` into the primary constructor. Explained each output and the
+  point of the task.
+- **Student did:** Reviewed the outcomes and explanation.
+- **AI-written code:** All three edits (each a one-line change specified by
+  the guide).
+- **Grey areas / notes:** Classroom task, not assessed; the portfolio README
+  excludes 12.7. The AI did all of the hands-on work.
