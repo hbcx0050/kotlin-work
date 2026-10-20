@@ -992,3 +992,22 @@ as new entries.
   the guide).
 - **Grey areas / notes:** Classroom task, not assessed; the portfolio README
   excludes 12.7. The AI did all of the hands-on work.
+
+### 2026-10-20: Task 12.8.1 (Day enum, valueOf() error handling)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.8.1.
+- **AI did:** Summarised guide 12.8 (enums, `name`, `ordinal`, `entries`,
+  `valueOf()`). Copied the guide's `Day` enum into `Day.kt`. At the student's
+  request, wrote the step 1 `main()` (prompt, `readln()`, `Day.valueOf()`)
+  and ran it with `Monday` and `monday`, showing the
+  `IllegalArgumentException`. Fixed a stale Gradle build
+  (`ClassNotFoundException: MainKt`) with `./gradlew clean`. Gave hints for
+  step 3. Tested the student's version with three inputs, then tidied the
+  formatting.
+- **Student did:** Step 3: wrapped the parsing in `try`/`catch` and listed
+  the valid days with `Day.entries.joinToString(", ") { it.name }`.
+- **AI-written code:** `Day.kt`, the step 1 `main()`, and the formatting
+  changes.
+- **Grey areas / notes:** Classroom task, not assessed. Case-insensitive input
+  (optional) was not added.
