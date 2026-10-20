@@ -842,3 +842,18 @@ as new entries.
   close to the full solution (at the student's explicit request). The Python
   files `python/point.py` and `python/main.py` were not done: the student
   knows Python classes already and chose to skip them.
+
+### 2026-10-20: Task 12.3.1 (secondary constructors)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.3.1.
+- **AI did:** Fetched guide 12.3 and wrote out the task steps with
+  fill-in-the-blank hints. Ran steps 1 and 2 (the missing-argument errors)
+  and showed the results. At the student's request ("finish it off"), wrote
+  both secondary constructors in `Point.kt`, added the `q` lines to
+  `Main.kt`, and showed the step 4 type-mismatch error.
+- **Student did:** Answered the step 3 question correctly (delegate with
+  `this(0.0, 0.0)`).
+- **AI-written code:** All changes in `Point.kt` and `Main.kt`.
+- **Grey areas / notes:** Classroom task, not assessed. The AI did most of the
+  hands-on work, at the student's explicit request.
