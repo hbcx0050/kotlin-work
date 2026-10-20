@@ -875,3 +875,18 @@ as new entries.
 - **AI-written code:** The scaffolding, the step 4 change in `main()`, and the
   tidy-ups.
 - **Grey areas / notes:** Classroom task, not assessed.
+
+### 2026-10-20: Task 12.3.3 (initializer block validation)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.3.3.
+- **AI did:** Copied the 12.3.2 sources into `task12_3_3/src` (step 1) and
+  changed their header comments to say 12.3.3. Explained the `init` / `require()`
+  step with a fill-in-the-blank hint. Reviewed the first attempt and explained
+  its two errors: `require()` was not in an `init` block, and `newPerson` was
+  declared twice. Ran the final version.
+- **Student did:** Wrote the blank-name test cases in `main()` and the
+  `init` block with `require(name.isNotBlank())`, and fixed both errors.
+- **AI-written code:** None beyond the copied files.
+- **Grey areas / notes:** Classroom task, not assessed. The program ends with
+  an uncaught `IllegalArgumentException` on purpose, to show the validation.
