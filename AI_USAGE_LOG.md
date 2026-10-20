@@ -961,3 +961,18 @@ as new entries.
   `main()`).
 - **Grey areas / notes:** Classroom task, not assessed. The program crashes
   with `IllegalArgumentException` on purpose.
+
+### 2026-10-20: Task 12.5.4 (computed property age)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.5.4. Completes Section 12.5.
+- **AI did:** Explained computed properties (a `val` with `get()` and no
+  backing field; `yearsUntil()`; the `today()` helper). Added the guide's
+  import and `age` line to `Person.kt`. At the student's request, wrote
+  `main()` with two people: one whose birthday this year has passed, and one
+  whose birthday is tomorrow (2026-10-21), to check that only whole years
+  count. Ran it.
+- **Student did:** Delegated the trivial `main()` lines.
+- **AI-written code:** All of it (copied from the guide, plus `main()`).
+- **Grey areas / notes:** Classroom task, not assessed. The second test person
+  goes beyond the task.
