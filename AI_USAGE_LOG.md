@@ -890,3 +890,20 @@ as new entries.
 - **AI-written code:** None beyond the copied files.
 - **Grey areas / notes:** Classroom task, not assessed. The program ends with
   an uncaught `IllegalArgumentException` on purpose, to show the validation.
+
+### 2026-10-20: Task 12.4.1 (Circle class with methods)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.4.1.
+- **AI did:** Fetched guide 12.4 and gave the steps, hints and values to check
+  by hand. Scaffolded `Circle.kt` (`PI` import, TODO) and `Main.kt` (empty
+  `main()`). Reviewed the student's class and found it correct. At the
+  student's request, wrote the test program in `Main.kt`: a negative radius
+  caught with try/catch, area, perimeter, and `contains()` for inside,
+  outside and edge points. Then reformatted `Circle.kt` (spacing, removed
+  the TODO comment).
+- **Student did:** Wrote the whole `Circle` class: properties, `init`
+  validation, `area()`, `perimeter()` and `contains()`.
+- **AI-written code:** The scaffolding, all of `Main.kt`, and the
+  formatting-only changes to `Circle.kt`.
+- **Grey areas / notes:** Classroom task, not assessed.
