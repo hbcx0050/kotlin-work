@@ -1032,3 +1032,20 @@ as new entries.
   and the formatting change.
 - **Grey areas / notes:** Classroom task, not assessed. The skeletons were
   close to the full solution (at the student's explicit request).
+
+### 2026-10-20: Task 12.9 (object declarations, companion object factory)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.9. Completes Chapter 12.
+- **AI did:** Summarised guide 12.9 (`object` singletons, companion objects
+  as class-level members, Static Factory Method). Copied the guide's
+  `Person` class (private constructor, `Factory` companion with `create()`)
+  into `Person.kt`. At the student's request, ran the three `main()` steps:
+  the private-constructor compile error, a successful `create()`, and a
+  duplicate-name run-time error. Explained the outcomes.
+- **Student did:** Reviewed the outcomes and explanation.
+- **AI-written code:** All of it (the class copied from the guide, plus
+  `main()`).
+- **Grey areas / notes:** Classroom task, not assessed; the portfolio README
+  excludes 12.9. The program ends with an `IllegalArgumentException` on
+  purpose.
