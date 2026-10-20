@@ -1049,3 +1049,16 @@ as new entries.
 - **Grey areas / notes:** Classroom task, not assessed; the portfolio README
   excludes 12.9. The program ends with an `IllegalArgumentException` on
   purpose.
+
+### 2026-10-20: End of session (week 4, lecture 1)
+
+- **Progress:** Chapter 12 complete: Tasks 12.1 to 12.9, plus Section 12.6
+  read. The Python part of 12.1 and the 12.8.2 nested-enum extension were
+  skipped. **Next: Task 13.2**, then 13.4, 13.5, and the Week 4 portfolio
+  (`triangles`, `to-do-list`).
+- **Outstanding:** the 2026-10-02 entry (Tasks 3.1 to 4.4) still needs
+  details filled in. `tasks/task9_6/` has no committed `test.data`. The
+  Task 11.4.1 diagram's attribute types were not checked against Figure
+  11.3.3. Untracked `bin/` build-output folders exist in several task
+  directories (not committed; could be added to `.gitignore`).
+- **Repo / GitHub:** `origin` is now SSH and pushes succeeded all session.
