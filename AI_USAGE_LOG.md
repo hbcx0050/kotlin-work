@@ -920,3 +920,15 @@ as new entries.
 - **Student did:** Wrote `main()` and the `toString()` override (block body).
 - **AI-written code:** Formatting changes only.
 - **Grey areas / notes:** Classroom task, not assessed.
+
+### 2026-10-20: Task 12.5.1 (properties in bytecode, javap)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.5.1. No code to write.
+- **AI did:** Built the project, ran `javap -p Person` on the compiled class,
+  and explained how each property maps to a private backing field plus
+  getter/setter methods.
+- **Student did:** Read the output and explanation.
+- **AI-written code:** None.
+- **Grey areas / notes:** Classroom task, not assessed. The AI ran the
+  commands itself instead of the student.
