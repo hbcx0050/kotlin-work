@@ -946,3 +946,18 @@ as new entries.
 - **AI-written code:** All of it (the class copied from the guide, plus the
   two `main()` lines).
 - **Grey areas / notes:** Classroom task, not assessed.
+
+### 2026-10-20: Task 12.5.3 (custom setter)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.5.3.
+- **AI did:** Explained custom setters (`set(value)`, `field = value`, setters
+  not running during construction). Copied the guide's `Person` class into
+  `Person.kt`. At the student's request, wrote `main()`: create a `Person`,
+  print the name, then assign `""`. Ran it and explained the stack trace.
+- **Student did:** Delegated the trivial `main()` lines; reviewed the
+  explanation.
+- **AI-written code:** All of it (the class copied from the guide, plus
+  `main()`).
+- **Grey areas / notes:** Classroom task, not assessed. The program crashes
+  with `IllegalArgumentException` on purpose.
