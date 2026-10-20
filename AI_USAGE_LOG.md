@@ -857,3 +857,21 @@ as new entries.
 - **AI-written code:** All changes in `Point.kt` and `Main.kt`.
 - **Grey areas / notes:** Classroom task, not assessed. The AI did most of the
   hands-on work, at the student's explicit request.
+
+### 2026-10-20: Task 12.3.2 (Person class with LocalDate and string constructor)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 12.3.2.
+- **AI did:** Fetched the guide section and gave the steps with
+  fill-in-the-blank skeletons. Scaffolded `Person.kt` with the guide's class
+  (the task says to copy it) and `Main.kt` with an empty `main()`. Tested the
+  student's string constructor in a scratch copy: valid ISO date, `apply()`,
+  and an invalid date (throws `DateTimeFormatException`). At the student's
+  request: switched `main()` to the string constructor (step 4), removed the
+  unused `LocalDate` import and the leftover TODO comment, and fixed spacing
+  around colons.
+- **Student did:** Wrote the secondary constructor
+  (`LocalDate.parse()` delegation) and the original `main()`.
+- **AI-written code:** The scaffolding, the step 4 change in `main()`, and the
+  tidy-ups.
+- **Grey areas / notes:** Classroom task, not assessed.
