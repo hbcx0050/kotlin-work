@@ -1203,3 +1203,19 @@ as new entries.
   from 2026-10-20: the 2026-10-02 entry (Tasks 3.1 to 4.4) still needs details,
   `tasks/task9_6/` has no committed `test.data`, and the Task 11.4.1 diagram
   types were not checked against Figure 11.3.3.
+
+### 2026-10-23: Repo tidy-up at session close
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Committing everything outstanding and checking the repo
+  against GitHub.
+- **AI did:** At the student's request, added `bin/` to `.gitignore` (IDE
+  build-output copies, never tracked), and committed the Week 3 portfolio
+  files as they were, unreviewed and unmodified: `Stats.kt` and `Triangles.kt`
+  (copied unchanged on 2026-10-22) and the student's edit to `MedianTest.kt`.
+  Ran `git fsck` and compared local `main` with `origin/main`.
+- **Student did:** The `MedianTest.kt` edit.
+- **AI-written code:** None. This entry also resolves the `bin/` item listed
+  as outstanding on 2026-10-20.
+- **Grey areas / notes:** The Week 3 portfolio tasks are still unfinished;
+  these commits only save the work in progress.
