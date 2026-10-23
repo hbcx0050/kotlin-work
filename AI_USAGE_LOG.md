@@ -1096,3 +1096,37 @@ as new entries.
   removal of duplicates).
 - **Grey areas / notes:** Classroom task, not assessed. The student asked the
   AI to write the edit rather than doing it themselves.
+
+### 2026-10-23: Task 13.4 (TDD with Money), scaffolding
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 13.4, setup only so far.
+- **AI did:** Summarised guide 13.4 as a step table. At the student's explicit
+  request, wrote the starting structure in `Money.kt`: the empty class
+  `class Money(euros: Int, cents: Int)` from step 1 of the guide, plus a TODO
+  comment. Checked that it builds.
+- **Student did:** Nothing yet; all tests and the growth of the class are still
+  to be written.
+- **AI-written code:** The one-line class shell in `Money.kt`. `MoneyTest.kt`
+  is untouched.
+- **Grey areas / notes:** Classroom task, not assessed. A later entry will
+  record the rest of the task.
+
+### 2026-10-23: Task 13.4 (TDD with Money), completed
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 13.4, from the first tests to a passing suite.
+- **AI did:** Reviewed the student's `MoneyTest.kt` against the guide's spec
+  and added the one missing test ("Euros and cents stored correctly"). Ran
+  `./gradlew test` at each stage and relayed the output: compile errors for
+  the missing properties and `plus`, then (after the student's first attempt)
+  the data-class `val` error, then 5 of 5 passing. Explained the compiler
+  messages and gave a skeleton and concepts for `Money` without the solution.
+- **Student did:** Wrote four of the five tests, and wrote all of `Money.kt`
+  (data class, `require` checks, `plus` with carry). Fixed the missing `val`
+  themselves and deleted the scaffold comment.
+- **AI-written code:** The one-line class shell from the earlier scaffolding
+  entry, and the "stored correctly" test in `MoneyTest.kt`.
+- **Grey areas / notes:** Classroom task, not assessed. The student skipped
+  the guide's one-test-at-a-time cycle and wrote all tests first. The
+  optional extras (`toString`, comparison, subtraction) were not done.
