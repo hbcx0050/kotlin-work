@@ -1145,3 +1145,43 @@ as new entries.
   file was edited by the AI.
 - **Grey areas / notes:** Classroom task, not assessed. The optional manual
   stub (interface plus stub class) was skipped. Task 13.3 has no code task.
+
+### 2026-10-23: Task 14.1 (packages), setup
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 14.1, setup only.
+- **AI did:** Summarised guide 14.1 as a step table. Ran the baseline
+  `./kotlin build` and `jar -tf` (`Customer.class` and `MainKt.class` at the
+  JAR root). At the student's request, added `// TODO` step comments to
+  `Customer.kt` and `Main.kt`. No code was changed.
+- **Student did:** Nothing yet.
+- **AI-written code:** Comments only.
+- **Grey areas / notes:** Classroom task, not assessed.
+
+### 2026-10-23: Task 14.1 (packages), steps 3 and 4
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 14.1, steps 3 and 4.
+- **AI did:** At the student's explicit request, added `package myapp.orders`
+  to `Customer.kt` (build failed with `Unresolved reference 'Customer'` in
+  `Main.kt`), fixed it first with the FQN `myapp.orders.Customer(...)` (build
+  passed), then replaced that with `import myapp.orders.Customer` (build and
+  run passed, output `Customer(name=Joe Smith, email=joe@example.com)`).
+  Explained why each result happened.
+- **Student did:** Nothing in these steps. Steps 5 and 6 are still to do.
+- **AI-written code:** The package declaration, the FQN edit and the import.
+- **Grey areas / notes:** Classroom task, not assessed.
+
+### 2026-10-23: Task 14.1 (packages), steps 5 and 6
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 14.1, steps 5 and 6. Completes the task.
+- **AI did:** At the student's request, ran `jar -tf` (`MainKt.class` and
+  `myapp/orders/Customer.class`), moved `Customer.kt` to
+  `src/myapp/orders/`, and rebuilt and ran. Build and output unchanged, and
+  the JAR paths were the same after the move.
+- **Student did:** Nothing in these steps.
+- **AI-written code:** None; the file move only.
+- **Grey areas / notes:** Classroom task, not assessed. The student did none
+  of the task's edits themselves (steps 3 to 6 were done by the AI at their
+  request). The `// TODO` comments added earlier are still in the files.
