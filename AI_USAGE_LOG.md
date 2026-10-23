@@ -1130,3 +1130,18 @@ as new entries.
 - **Grey areas / notes:** Classroom task, not assessed. The student skipped
   the guide's one-test-at-a-time cycle and wrote all tests first. The
   optional extras (`toString`, comparison, subtraction) were not done.
+
+### 2026-10-23: Task 13.5 (test doubles)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 13.5. Completes Chapter 13.
+- **AI did:** Summarised guide 13.5 (fakes, stubs, spies, mocks; MockK syntax)
+  and gave the student a step-by-step outline of what to write, using the
+  guide's own fixture snippet. Ran `./kotlin test` and relayed the result: 3
+  of 3 tests passing.
+- **Student did:** Wrote the MockK stub fixture and the three tests (JPY, USD,
+  GBP) in `CurrencyConverterTest.kt`.
+- **AI-written code:** None beyond the guide's snippet shown in chat; no `.kt`
+  file was edited by the AI.
+- **Grey areas / notes:** Classroom task, not assessed. The optional manual
+  stub (interface plus stub class) was skipped. Task 13.3 has no code task.
