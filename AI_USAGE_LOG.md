@@ -1185,3 +1185,21 @@ as new entries.
 - **Grey areas / notes:** Classroom task, not assessed. The student did none
   of the task's edits themselves (steps 3 to 6 were done by the AI at their
   request). The `// TODO` comments added earlier are still in the files.
+
+### 2026-10-23: End of session (week 4, tasks complete)
+
+- **Progress:** All Week 4 classroom tasks done and pushed: 13.2, 13.4, 13.5
+  and 14.1 (13.3 has no code task). Chapters 13 and 14 complete.
+  **Next:** the Week 4 portfolio (`triangles`, `to-do-list`), and the Week 3
+  portfolio (`triangles`, `median`) still to be written.
+- **AI use this session:** I (the AI) wrote the `TimeTest.kt` fixture refactor
+  (13.2), the one-line `Money` shell and the "stored correctly" test (13.4),
+  and the package line, FQN, import and file move (14.1), each at the
+  student's explicit request. The student wrote the `Money` class, four of the
+  five `Money` tests, and all of the 13.5 tests.
+- **Outstanding:** Week 3 portfolio files are uncommitted (`Stats.kt`,
+  `Triangles.kt`, a modified `MedianTest.kt`). Untracked `bin/` folders remain
+  in several task directories (could go in `.gitignore`). Items carried over
+  from 2026-10-20: the 2026-10-02 entry (Tasks 3.1 to 4.4) still needs details,
+  `tasks/task9_6/` has no committed `test.data`, and the Task 11.4.1 diagram
+  types were not checked against Figure 11.3.3.
