@@ -16,5 +16,20 @@ class MedianTest : FreeSpec({
         }
     }
 
-    // Write four more tests here
+    "Median on 1 element list"{
+        val data = listOf(1.0f)
+        median(data) shouldBe 1.0f
+    }
+    "Median on 2 element list"{
+        val data = listOf(1.0f, 2.0f)
+        median(data) shouldBe 1.5f
+    }
+    "Median on 3 element list"{
+        val data = listOf(1.0f, 2.0f, 3.0f)
+        median(data) shouldBe 2.0f
+    }
+    "Median on 4 element list"{
+        val data = listOf(1.0f, 2.0f, 3.0f, 4.0f)
+        median(data) shouldBe 2.5f
+    }
 })
