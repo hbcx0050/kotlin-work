@@ -1062,3 +1062,37 @@ as new entries.
   11.3.3. Untracked `bin/` build-output folders exist in several task
   directories (not committed; could be added to `.gitignore`).
 - **Repo / GitHub:** `origin` is now SSH and pushes succeeded all session.
+
+### 2026-10-22: Portfolio Week 3 setup (no code written)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Portfolio Week 3 (`triangles`, `median`), setup only.
+- **AI did:** Pulled the repo and checked its integrity. Summarised the Week 3
+  READMEs as step tables. At the student's request, copied `Triangles.kt`
+  (from `portfolio/week2/triangles/src/`) and `Stats.kt` (from
+  `tasks/task7_7_1/src/`) unmodified into `portfolio/week3/*/src/`, as the
+  READMEs instruct. Ran `./kotlin test` and relayed the baseline results:
+  `triangles` 8 passed / 2 failed, `median` 1 failed (expected
+  `IllegalArgumentException`, got `IndexOutOfBoundsException`).
+- **Student did:** Nothing yet; the code and tests are still to be written.
+- **AI-written code:** None. The copied files are the student's own earlier
+  solutions, unchanged.
+- **Grey areas / notes:** File copying was explicitly permitted by the student.
+  No edits to any `.kt` file or test.
+
+### 2026-10-23: Task 13.2 (test fixtures)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Task 13.2, refactoring `TimeTest.kt` to use a test fixture.
+- **AI did:** Pulled the repo (already up to date). Summarised the README and
+  guide section 13.2 and ran the baseline `./gradlew test` and `run`. At the
+  student's explicit request, made the edit to `TimeTest.kt`: moved the six
+  repeated `Time` objects (`midnight`, `noon`, `thirtyMin`, `thirtySec`,
+  `fiveMin`, `fiveHours`) to the top of the spec and removed the local copies.
+  Reran the tests: all 14 pass.
+- **Student did:** Worked out the change (hoisting the duplicated objects into
+  a shared scope) and asked the AI to make it.
+- **AI-written code:** The `TimeTest.kt` refactor (fixture declarations and
+  removal of duplicates).
+- **Grey areas / notes:** Classroom task, not assessed. The student asked the
+  AI to write the edit rather than doing it themselves.
