@@ -1279,3 +1279,16 @@ as new entries.
 - **AI-written code:** None beyond code copied verbatim from the guide.
 - **Grey areas / notes:** Classroom task, not assessed. The student asked
   directly where the fix went, so the hint named the file and keyword.
+
+### 2026-10-27: Tasks 15.4.1 and 15.4.2 (graphics case study)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Tasks 15.4.1 and 15.4.2 (read-and-run; no code to write).
+- **AI did:** Fetched guide §15.4, built both versions, launched the Swing
+  windows on the student's display (v1 twice, v2 once), and explained the
+  contrast between v1 (`is` checks and smart casts in `Picture.draw()`) and
+  v2 (`open fun draw()` in `Shape`, overridden in each subclass). At the
+  student's request, uncommented the `Triangle` line in 15.4.2's `Main.kt`.
+- **Student did:** Read the code and viewed both pictures.
+- **AI-written code:** None (one line uncommented, as the task instructs).
+- **Grey areas / notes:** Classroom tasks, not assessed.
