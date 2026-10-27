@@ -1292,3 +1292,37 @@ as new entries.
 - **Student did:** Read the code and viewed both pictures.
 - **AI-written code:** None (one line uncommented, as the task instructs).
 - **Grey areas / notes:** Classroom tasks, not assessed.
+
+### 2026-10-27: Task 16.2 (abstract classes), in progress
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 16.2 up to the last `Car` fix; not finished.
+- **AI did:** Fetched guide §16.2. Pasted the guide's `Vehicle` and `Car`
+  code and made the guide's build-and-break edits, relaying each compiler
+  error (`Abstract function 'drive' in non-abstract class 'Vehicle'.`,
+  `Function 'drive' without a body must be abstract.`, `Class 'Car' is not
+  abstract and does not implement abstract base class member`, and `'drive'
+  hides member of supertype 'Vehicle' and needs an 'override' modifier.`).
+  Added a `// TODO` to `Main.kt`.
+- **Student did:** Nothing yet. The final `Car` fix and the `main()` code are
+  left for the student.
+- **AI-written code:** None beyond code copied verbatim from the guide.
+- **Grey areas / notes:** Classroom task, not assessed. Committed as work in
+  progress; `task16_2` **does not build** at this commit (step 7 error).
+
+### 2026-10-27: End of session (week 5, lecture 1)
+
+- **Progress:** Chapter 15 complete and pushed: 15.2.1, 15.2.2, 15.2.3, 15.3,
+  15.4.1 and 15.4.2. Task 16.2 started (see above).
+  **Next:** finish 16.2 (`override` on `Car.drive()`, then `main()`), then
+  16.3, 17.3 and 17.5. Week 3 and 4 portfolios still outstanding; Week 5
+  portfolio not started.
+- **AI use this session:** I (the AI) copied guide/README code into task
+  files and ran the build-and-break steps, explained each topic from the
+  guide, and ran, logged, committed and pushed each task. The student wrote
+  the `open` fixes (15.2.1, 15.3) and all of 15.2.3 (`SavingsAccount` and
+  its `main()`). Andy asked that explanations always come from the COMP2850
+  guide pages; this is now a standing preference.
+- **Outstanding:** Carried over from 2026-10-23: the 2026-10-02 entry needs
+  details, `tasks/task9_6/` has no committed `test.data`, and the Task 11.4.1
+  diagram types were not checked against Figure 11.3.3.
