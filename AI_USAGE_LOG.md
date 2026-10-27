@@ -1234,3 +1234,32 @@ as new entries.
 - **Student did:** Step 4, the fix (marking `Child` as `open`).
 - **AI-written code:** None beyond the three lines copied from the README.
 - **Grey areas / notes:** Classroom task, not assessed.
+
+### 2026-10-27: Task 15.2.2 (constructors in subclasses)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 15.2.2 (run-and-observe; no code to write).
+- **AI did:** Ran the provided demo with `./kotlin run` and relayed the
+  output: `Person constructor invoked`, then `Student constructor invoked`,
+  then `Sarah` and `Computer Science`. Explained that the superclass
+  constructor runs first.
+- **Student did:** Read the result.
+- **AI-written code:** None.
+- **Grey areas / notes:** Classroom task, not assessed. No files changed.
+
+### 2026-10-27: Task 15.2.3 (SavingsAccount subclass)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 15.2.3, all steps.
+- **AI did:** Fetched the task and the Figure 15.2 class diagram from guide
+  §15.2, scaffolded `// TODO` comments in `SavingsAccount.kt` and `Main.kt`,
+  and gave a step list with hints (pass `holder` to `BankAccount`, validate
+  `rate` in `init`, use `deposit()` because `balance` has a private setter,
+  convert the `Double` interest to `Int`). Ran the finished program (output
+  balance 1314, checked by hand), then removed the scaffold TODO lines and
+  added a missing trailing newline to `SavingsAccount.kt`.
+- **Student did:** Wrote the whole `SavingsAccount` class and the `main()`
+  demo.
+- **AI-written code:** None (the scaffold comments only, since removed).
+- **Grey areas / notes:** Classroom task, not assessed. The hints were fairly
+  specific because the student was catching up on a missed hour of lecture.
