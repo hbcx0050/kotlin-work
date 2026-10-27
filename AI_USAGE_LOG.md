@@ -1263,3 +1263,19 @@ as new entries.
 - **AI-written code:** None (the scaffold comments only, since removed).
 - **Grey areas / notes:** Classroom task, not assessed. The hints were fairly
   specific because the student was catching up on a missed hour of lecture.
+
+### 2026-10-27: Task 15.3 (overriding and dynamic binding)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 15.3, all steps.
+- **AI did:** Fetched the task from guide §15.3. Pasted the guide's given
+  `Person`, `Student` and `Main.kt` code, made the build-and-observe edits the
+  guide dictates (adding `speak()` to `Student`, then `override`), and relayed
+  the two compiler errors (`'speak' hides member of supertype 'Person' and
+  needs an 'override' modifier.` and `'speak' in 'Person' is final and cannot
+  be overridden.`). Explained open/override for methods and dynamic binding,
+  and confirmed the fix was `open` in `Person.kt` when asked. Ran the program.
+- **Student did:** The fix (`open fun speak()` in `Person`).
+- **AI-written code:** None beyond code copied verbatim from the guide.
+- **Grey areas / notes:** Classroom task, not assessed. The student asked
+  directly where the fix went, so the hint named the file and keyword.
