@@ -1219,3 +1219,18 @@ as new entries.
   as outstanding on 2026-10-20.
 - **Grey areas / notes:** The Week 3 portfolio tasks are still unfinished;
   these commits only save the work in progress.
+
+### 2026-10-27: Task 15.2.1 (syntax for subclasses)
+
+- **Tool / model:** Claude Code in VS Code (Claude Opus 5.5)
+- **Work covered:** Task 15.2.1, all steps. Start of Week 5 (Chapters 15 to 17).
+- **AI did:** Pulled and checked the repo against GitHub (`git fsck --full`
+  clean, local `main` equal to `origin/main`). Pasted the README's `Parent`
+  and `Child` classes into `Classes.kt` (step 1) and built (step 2, passed),
+  added the README's `GrandChild` line (step 3) and relayed the compiler error
+  `This type is final, so it cannot be extended.` Explained the task from
+  guide §15.2 (classes are closed by default; `open` is not inherited).
+  Rebuilt after the student's fix (passed).
+- **Student did:** Step 4, the fix (marking `Child` as `open`).
+- **AI-written code:** None beyond the three lines copied from the README.
+- **Grey areas / notes:** Classroom task, not assessed.
