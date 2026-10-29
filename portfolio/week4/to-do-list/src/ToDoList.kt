@@ -56,11 +56,6 @@ class ToDoList() {
     }
 
     fun getItemsDueOn(date: LocalDate): List<ToDoItem> {
-        for(item in items){
-            if (item.dueDate == date){
-                return items.filter{it.dueDate == date}
-            }
-        }
-        return emptyList()
+        return items.filter{it.dueDate == date}
     }
 }

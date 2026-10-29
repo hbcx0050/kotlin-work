@@ -1374,3 +1374,13 @@ as new entries.
   saved) briefly showed load failing; a re-run showed it was fine. Not yet
   submitted to Gradescope (deadline Fri 30/10/2026, 14:00). Outstanding from
   before: Week 5 portfolio not started; Task 16.2 unfinished.
+
+### 2026-10-29: Portfolio Week 4, final tweak (addendum)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Portfolio Week 4, `ToDoList.kt`.
+- **AI did:** Re-ran `./kotlin test` (15/15 and 13/13 pass), committed and
+  pushed the student's change.
+- **Student did:** Simplified `getItemsDueOn` to a single `filter` line.
+- **AI-written code:** None.
+- **Grey areas / notes:** None. Ready for upload to Gradescope.
