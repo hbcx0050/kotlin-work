@@ -1349,3 +1349,28 @@ as new entries.
   rules. I pointed out conceptual issues in drafts (scope of `init` locals,
   `toString` format, duplicated Heron's formula, a type mismatch) without
   giving replacement code. Not yet submitted to Gradescope.
+
+### 2026-10-29: Portfolio Week 4, Part 2 (ToDoList) and session close
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Portfolio Week 4, part 2 (`to-do-list/src/ToDoList.kt`).
+- **AI did:** Read the starter files, `to-do.csv` and `ToDoListTest.kt`, and
+  explained what each stub had to do and what the tests expected (value
+  equality of `data class` items, insertion order, the `": "` separator and
+  split limit for `load()`). Explained lambdas and collections (`count`,
+  `filter`, `removeAll`) using unrelated examples. Ran
+  `./kotlin test -m to-do-list` repeatedly and relayed output verbatim,
+  explaining what failures meant (a loop that `return`s on the first match,
+  a `filter` comparing against `null`, `removeAll`'s return value) without
+  supplying replacement code. Committed and pushed.
+- **Student did:** Wrote all of `ToDoList.kt`: the four counts, `load()`,
+  `deleteDone()`, `getItems()`, `getItemsDueOn()`. Final result: 13/13 tests
+  pass locally (4 skipped, as the README says to ignore). Both modules
+  (`./kotlin test`) pass.
+- **AI-written code:** None in the submission files.
+- **Grey areas / notes:** The student asked me to restore the starter's stub
+  comments inside the functions; I declined to edit the file and quoted the
+  starter comments in chat instead. A stale first test run (file not yet
+  saved) briefly showed load failing; a re-run showed it was fine. Not yet
+  submitted to Gradescope (deadline Fri 30/10/2026, 14:00). Outstanding from
+  before: Week 5 portfolio not started; Task 16.2 unfinished.
