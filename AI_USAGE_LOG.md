@@ -1384,3 +1384,21 @@ as new entries.
 - **Student did:** Simplified `getItemsDueOn` to a single `filter` line.
 - **AI-written code:** None.
 - **Grey areas / notes:** None. Ready for upload to Gradescope.
+
+### 2026-10-29: End of session (Portfolio Week 4)
+
+- **Progress:** Portfolio Week 4 complete locally: `Triangle.kt` 15/15 and
+  `ToDoList.kt` 13/13 tests pass. The student reports it as done and uploaded
+  to Gradescope (deadline Fri 30/10/2026, 14:00); I cannot see Gradescope, so
+  its result is unconfirmed. Final `Triangle.kt` inlines the validity check in
+  `init` (student's tweak after the earlier commit; re-tested, committed here).
+  **Next:** finish Task 16.2 (`override` on `Car.drive()`, then `main()`), then
+  16.3, 17.3 and 17.5. Week 5 portfolio not started (check its deadline).
+- **AI use this session:** Tutoring only for the portfolio: explained
+  concepts, read the task, tests and the student's drafts, ran tests and
+  relayed output, and logged, committed and pushed. No AI-written code in
+  `Triangle.kt` or `ToDoList.kt`. At the student's request I copied the two
+  submission files unchanged into `Downloads\week4-submission` for upload.
+- **Outstanding:** Carried over: the 2026-10-02 entry needs details,
+  `tasks/task9_6/` has no committed `test.data`, and the Task 11.4.1 diagram
+  types were not checked against Figure 11.3.3.
