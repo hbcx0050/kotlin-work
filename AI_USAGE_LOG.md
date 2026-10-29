@@ -1326,3 +1326,26 @@ as new entries.
 - **Outstanding:** Carried over from 2026-10-23: the 2026-10-02 entry needs
   details, `tasks/task9_6/` has no committed `test.data`, and the Task 11.4.1
   diagram types were not checked against Figure 11.3.3.
+
+### 2026-10-29: Portfolio Week 4, Part 1 (Triangle class)
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Portfolio Week 4, part 1 (`triangles/src/Triangle.kt`).
+- **AI did:** Pulled the repo. Read the task README, the test file and the
+  student's PDF worksheet, and summarised the requirements and deadline
+  (Fri 30/10/2026, 14:00). Explained constructors, `init`, `require`,
+  computed properties (`get()`), `toString()` and local-vs-member scope, using
+  an unrelated `Box`/`Circle` example and Roblox analogies. Reviewed the
+  student's drafts at the level of concepts and relayed compiler output
+  verbatim, explaining what each message meant. Ran
+  `./kotlin test -m triangles` several times. Committed and pushed.
+- **Student did:** Wrote all of `Triangle.kt` (class, validity helper reused
+  from Week 3, `init`, three computed properties, `toString()`) and all
+  fixes. Final result: 15/15 tests pass locally.
+- **AI-written code:** None in the submission file. Only the unrelated
+  illustrative `Box` and `Circle` snippets in chat.
+- **Grey areas / notes:** The student asked twice for me to write a skeleton
+  and to copy their Week 3 code across; I declined both under the portfolio
+  rules. I pointed out conceptual issues in drafts (scope of `init` locals,
+  `toString` format, duplicated Heron's formula, a type mismatch) without
+  giving replacement code. Not yet submitted to Gradescope.
