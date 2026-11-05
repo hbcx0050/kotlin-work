@@ -1402,3 +1402,37 @@ as new entries.
 - **Outstanding:** Carried over: the 2026-10-02 entry needs details,
   `tasks/task9_6/` has no committed `test.data`, and the Task 11.4.1 diagram
   types were not checked against Figure 11.3.3.
+
+### 2026-11-05: Portfolio Week 5 (StudentAccount) and end of repo
+
+- **Tool / model:** Claude Code in VS Code (Claude Sonnet 5.5)
+- **Work covered:** Portfolio Week 5, `StudentAccount.kt` (subclass of the
+  abstract `BankAccount`).
+- **AI did:** Tutoring only. Explained the task and README, gave unrelated
+  examples (custom setter with `field`, subclassing an abstract class,
+  `protected set`, `require`, Boolean functions). Read the student's file and
+  ran `./kotlin test`, relaying output and explaining each message: a compile
+  error from a same-line `set`, a missing `withdrawalsAllowed()`, and a failing
+  test for it. Pointed out, at the level of concepts, that the exact exception
+  messages are required, that `toString()` must use the real holder, and that
+  `withdrawalsAllowed()` depends on both `balance` and `overdraft`. Logged,
+  committed and pushed.
+- **Student did:** Wrote all of `StudentAccount.kt` and every fix. Final result:
+  18/18 local tests pass; the student reports all tests pass on Gradescope.
+- **AI-written code:** None in the submission file.
+- **Grey areas / notes:** The student asked me to copy the file unchanged to
+  `Downloads\StudentAccount.kt` for upload, which I did (byte-identical).
+  Explanations of the `withdrawalsAllowed()` logic went close to the answer
+  (the "withdraw 1 and check the limit" idea, plus an unrelated parking-garage
+  example of the same shape). I did not write or suggest the line itself.
+
+### 2026-11-05: End of session (Portfolio Week 5, final piece)
+
+- **Progress:** Portfolio Week 5 complete: 18/18 local tests, passed on
+  Gradescope per the student. This was the last portfolio piece in this repo.
+- **AI use this session:** Tutoring only, as above. No AI-written code in the
+  submission.
+- **Outstanding:** Carried over: Task 16.2 unfinished, then 16.3, 17.3 and
+  17.5 not done; the 2026-10-02 entry needs details; `tasks/task9_6/` has no
+  committed `test.data`; the Task 11.4.1 diagram types were not checked against
+  Figure 11.3.3.
